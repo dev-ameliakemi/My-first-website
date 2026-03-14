@@ -87,13 +87,12 @@ li a:focus {
 }
 
 
-
 .container {
     width: 100%;
     height: auto;
     margin-inline: auto;
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     justify-content: center;
     flex-flow: row wrap;
     align-items: stretch;
@@ -127,21 +126,78 @@ li a:focus {
     padding: 0.5rem 1rem;
 }
 
+.card p {
+    padding: 0 1rem 1rem 1rem;
+    margin: 0;
+    color: rgb(100, 100, 100);
+}
 
 .popular-section .card {
     background-color: rgb(255, 253, 249);
 }
 
 
-.collections-section 
-h1
+.collections-section h1,
+.popular-section h1
 {
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 1rem;
     font-weight: 400;
+}
+
+.collections-section
+{
+    padding: 3rem 4rem;
+}
+
+
+.popular-section {
+    padding: 3rem 4rem;
+}
+
+
+.cta-section {
+    background-color: rgb(255, 253, 249);
+    position: relative;
+    height: 80vh;
+}
+
+.cta-section img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
     
 }
+.cta-content {
+    position: absolute;
+    top: 50%;
+    left: 72%;
+    transform: translate(-50%, -50%);
+    color: rgb(20, 12, 1);
+    white-space: nowrap;
+    text-align: center;
+}
+
+.cta-content p {
+    font-size: 0.85rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.cta-content h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin: 0.5rem 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+
+
 
 
 .footer-content h3 {
